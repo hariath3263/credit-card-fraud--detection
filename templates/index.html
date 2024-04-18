@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+       
+        <link rel="stylesheet" href="static/css/bootstrap.css">
+        <link rel="stylesheet" href="static/css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="static/css/custom-styles.css">
+        <link rel="stylesheet" href="static/css/component.css">
+        <link rel="stylesheet" href="static/css/font-awesome.css">
+        <link rel="stylesheet" href="static/css/font-awesome-ie7.css">
+
+        <script src="static/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+            <div class="wrap-bg">
+                
+                <div class="container">
+                <div class="banner">
+                    <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="item">
+                                            <img src="static/img/banner-image.jpg" alt="">
+                                            <div class="carousel-caption">
+                                              <h1>Data Mining</h1>
+                                              <h2>Credit Card Fraud Detection using machine learning</h2>
+                                              <div class="social-icons">
+                                                <ul>
+                                                    <li><a href="#"><i class="fw-icon-facebook icon"></i></a></li>
+                                                    <li><a href="#"><i class="fw-icon-twitter icon"></i></a></li>
+                                                    <li><a href="#"><i class="fw-icon-google-plus icon"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="item active">
+                                            <img src="static/img/banner-image.jpg" alt="">
+                                            <div class="carousel-caption">
+                                              <h1>Data Mining</h1>
+                                              <h2>Credit Card Fraud Detection using machine learning</h2>
+                                              <div class="social-icons">
+                                                <ul>
+                                                    <li><a href="#"><i class="fw-icon-facebook icon"></i></a></li>
+                                                    <li><a href="#"><i class="fw-icon-twitter icon"></i></a></li>
+                                                    <li><a href="#"><i class="fw-icon-google-plus icon"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="static/img/banner-image.jpg" alt="">
+                                            <div class="carousel-caption">
+                                              <h1>Data Mining</h1>
+                                              <h2>Credit Card Fraud Detection using machine learning</h2>
+                                              <div class="social-icons">
+                                                <ul>
+                                                    <li><a href="#"><i class="fw-icon-facebook icon"></i></a></li>
+                                                    <li><a href="#"><i class="fw-icon-twitter icon"></i></a></li>
+                                                    <li><a href="#"><i class="fw-icon-google-plus icon"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <!-- Carousel nav -->
+                                    <a data-slide="prev" href="#myCarousel" class="carousel-control left"><i class="fw-icon-chevron-left"></i></a>
+                                    <a data-slide="next" href="#myCarousel" class="carousel-control right"><i class="fw-icon-chevron-right"></i></a>
+                                </div>
+                </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="navbar">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="fw-icon-th-list"></i>
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active border-left"><a href="/index">Home</a></li>
+
+                            
+                            <li><a href="/notebook">Notebook</a></li>
+                            <li><a href="/login">Signout</a></li>
+                            
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+                
+            </div>
+            <div class="container bg-light-gray">
+              <div class="main-content">
+                <div class="featured-heading">
+                    <h1>Our Service</h1>
+                    
+                </div>
+                <div class="ruler"></div>
+                <div class="featured-blocks">
+                    <div class="row-fluid">
+
+        <h2 class="text-center text-capitalize pt-5">Please fill up the following information!!</h2>
+        <hr class="w-75 mx-auto pt-5">
+       
+          <div  class="col-lg-6 col-md-6 col-12">
+            <form action="{{ url_for('predict')}}" method="post">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8">
+                  
+                  <div class="form-group">
+                    <label for="age">V2:</label>
+                    <input class="form-group" type="text" id="age" name="1" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="age1">V4:</label>
+                    <input class="form-group" type="text" id="age1" name="2" required="required" >
+                  </div>
+                  <div class="form-group">
+                    <label for="age2">V5:</label>
+                    <input class="form-group" type="text" id="age2" name="3" required="required" >
+                  </div>
+                  <div class="form-group">
+                    <label for="age3">V7:</label>
+                    <input class="form-group" type="text" id="age3" name="4" required="required" >
+                  </div>
+                  <div class="form-group">
+                    <label for="age4">V8:</label>
+                    <input class="form-group" type="text" id="age4" name="5" required="required">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="age9">V10:</label>
+                    <input class="form-group" type="text" id="age9" name="6" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="age1">V13:</label>
+                    <input class="form-group" type="text" id="age1" name="7" required="required" >
+                  </div>
+                  <div class="form-group">
+                    <label for="age11">V14:</label>
+                    <input class="form-group" type="text" id="age11" name="8" required="required" >
+                  </div>
+                  <div class="form-group">
+                    <label for="age21">V15:</label>
+                    <input class="form-group" type="text" id="age21" name="9" required="required" >
+                  </div>
+                  <div class="form-group">
+                    <label for="age31">V16:</label>
+                    <input class="form-group" type="text" id="age31" name="10" required="required" >
+                  </div>
+                  <div class="form-group">
+                    <label for="age41">V17:</label>
+                    <input class="form-group" type="text" id="age41" name="11" required="required" >
+                  </div>
+                  <div class="form-group">
+                    <label for="age51">V18:</label>
+                    <input class="form-group" type="text" id="age51" name="12" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="age51">V21:</label>
+                    <input class="form-group" type="text" id="age51" name="13" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="age51">V22:</label>
+                    <input class="form-group" type="text" id="age51" name="14" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="age51">V25:</label>
+                    <input class="form-group" type="text" id="age51" name="15" required="required">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="age61">Amount:</label>
+                    <input class="form-group" type="text" id="age61" name="16" required="required" placeholder="Enter the Amount">
+                  </div>
+                 
+                  
+              <button style="margin-left: 25%;" type="submit" class="btn btn-danger">Predict</button>
+            </form>
+          </div>
+                
+        </div>
+        </div>
+                        
+
+        <!-- /container -->
+
+       <script src="static/js/jquery-1.9.1.js"></script> 
+<script src="static/js/bootstrap.js"></script>
+    </body>
+</html>
